@@ -1,0 +1,30 @@
+{
+  "$schema": "./node_modules/@intisy-ai/api/schema/plugin.schema.json",
+  "id": "stub-plugin",
+  "api": 1,
+  "entry": "dist/index.js",
+  "displayName": "Stub Plugin",
+  "capabilities": [
+    "settings"
+  ],
+  "config": {
+    "defaults": {
+      "logging": true,
+      "greeting": "hello"
+    }
+  },
+  "publish": {
+    "generatedReadme": true
+  },
+  "repo": {
+    "role": "Reference plugin and starting point",
+    "category": "plugin",
+    "tech": [
+      "typescript"
+    ],
+    "topics": [
+      "example",
+      "template"
+    ]
+  }
+}
