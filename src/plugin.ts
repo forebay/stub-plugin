@@ -1,5 +1,5 @@
 import type { Plugin, PluginContext } from "@intisy-ai/api";
-import type { ActionResult, SettingsCapability } from "@intisy-ai/core";
+import type { ActionResult, SettingsCapability } from "@intisy-ai/basekit";
 import { STUB_SETTINGS } from "./settings.js";
 
 const PLUGIN_ID = "stub-plugin";

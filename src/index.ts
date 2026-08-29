@@ -1,4 +1,4 @@
-import { defineConfig, defineReadme, makeWriteLog, maybeRunConfigCli } from "@intisy-ai/core";
+import { defineConfig, defineReadme, makeWriteLog, maybeRunConfigCli } from "@intisy-ai/basekit";
 import plugin, { stubSettings } from "./plugin.js";
 import { PLUGIN_NAME, STUB_DEFAULTS } from "./settings.js";
 
@@ -10,7 +10,7 @@ defineReadme({
     HOST[Any api host] -->|import dist/index.js| ENTRY[index.ts]
     ENTRY -->|default export| PLUGIN[plugin.ts: api-only]
     PLUGIN -->|ctx.provide| SETTINGS[settings capability]
-    ENTRY -->|node dist/index.js config| CLI[core config CLI]
+    ENTRY -->|node dist/index.js config| CLI[basekit config CLI]
     CLI --> FILE["config/stub-plugin.json (written only on a change)"]`,
   structure: {
     src: [
@@ -23,14 +23,14 @@ defineReadme({
   commands: [
     { name: "stub-plugin-config", description: "View and change stub-plugin configuration." },
   ],
-  dependencies: ["api", "core"],
+  dependencies: ["api", "basekit"],
 });
 
 /**
  * Writes one diagnostic line, honouring this plugin's own `logging` setting.
  *
  * @remarks
- * Routed through core rather than hand-rolled, so this plugin's log lands where every other
+ * Routed through basekit rather than hand-rolled, so this plugin's log lands where every other
  * plugin's does and the global console toggle reaches it.
  */
 export const writeLog = makeWriteLog(PLUGIN_NAME);

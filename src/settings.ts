@@ -1,4 +1,4 @@
-import type { CapabilitySchema } from "@intisy-ai/core";
+import type { CapabilitySchema } from "@intisy-ai/basekit";
 
 /** The plugin's own name, which is also its config file's basename and its deployed bundle's. */
 export const PLUGIN_NAME = "stub-plugin";
