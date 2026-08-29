@@ -1,4 +1,4 @@
-import type { Plugin, PluginContext } from "@intisy-ai/api";
+import type { Plugin, PluginContext } from "@intisy/bayonet";
 import type { ActionResult, SettingsCapability } from "@intisy-ai/basekit";
 import { STUB_SETTINGS } from "./settings.js";
 

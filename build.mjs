@@ -10,7 +10,7 @@ await build({
   format: "esm",
   target: "node20",
   outfile: "dist/index.js",
-  external: ["@intisy-ai/basekit", "@intisy-ai/api"],
+  external: ["@intisy-ai/basekit", "@intisy/bayonet"],
   logLevel: "info",
 });
 
