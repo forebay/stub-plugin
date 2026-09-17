@@ -1,17 +1,17 @@
 {
   "name": "stub-plugin",
   "version": "1.0.0",
-  "description": "The reference plugin for the intisy-ai ecosystem: the smallest real plugin, kept green against every gate.",
+  "description": "The reference plugin for the forebay ecosystem: the smallest real plugin, kept green against every gate.",
   "main": "dist/index.js",
   "type": "module",
   "license": "MIT",
   "author": "intisy",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/intisy-ai/stub-plugin.git"
+    "url": "git+https://github.com/forebay/stub-plugin.git"
   },
   "keywords": [
-    "intisy-ai",
+    "forebay",
     "plugin",
     "example",
     "template",
